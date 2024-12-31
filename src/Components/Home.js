@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import BannerBackground from '../Assets/back.png'
+import { FiArrowRight } from 'react-icons/fi'
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
             <p className='primary-text'>
               Find the best PGs, hostels and rooms nearby
             </p>
+            <button className='secondary-button'>
+              Book Now <FiArrowRight/>
+            </button>
           </div>
         </div>
     </div>
