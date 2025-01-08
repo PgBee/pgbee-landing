@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: "Red Hat Display", sans-serif;
 }
 img {
   max-width: 100%;
@@ -47,8 +47,8 @@ nav {
   border-radius: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
-  font-weight: 600;
-  transition: 0.2s;
+  font-weight: 800;
+  transition: 0.5s;
 }
 .navbar-cart-icon {
   font-size: 1.15rem;
@@ -141,7 +141,7 @@ nav {
 }
 .primary-subheading {
   font-weight: 700;
-  color: #fe9e0d;
+  color: #e6de00;
   font-size: 1.15rem;
 }
 .about-buttons-container {
@@ -306,6 +306,20 @@ nav {
   align-items: center;
   font-weight: 600;
 }
+
+.fixed-component {
+  position: fixed;
+  bottom: 10px; /* Adjust position as needed */
+  right: 10px; /* Adjust position as needed */
+  background-color: #25D366; /* Example background color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other elements */
+  cursor: pointer;
+}
+
 
 @media (max-width: 1000px) {
   .navbar-links-container a {
