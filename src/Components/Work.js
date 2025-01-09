@@ -7,7 +7,7 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
+      title: "Seamless Rent and Bill Management",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
     },
     {
@@ -27,8 +27,7 @@ const Work = () => {
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        Our platform simplifies the process of finding and managing PG accommodations for students and owners. Students can browse verified hostels and PGs, compare options based on location, budget, and amenities, and book their stay securely. Additionally, we provide a seamless rent payment system and help settle water, electricity, and other utility bills, minimizing the workload for both students and PG owners. With our streamlined solutions, managing student accommodations has never been easier.
         </p>
       </div>
       <div className="work-section-bottom">

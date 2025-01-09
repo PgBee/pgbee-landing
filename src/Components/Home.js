@@ -17,7 +17,7 @@ const Home = () => {
           </div>
           <div className='home-text-section'>
             <h1 className='primary-heading'>
-              Accommodation in one tap
+              Your Perfect Stay, Just a Click Away!
             </h1>
             <p className='primary-text'>
               Find the best PGs, hostels and rooms nearby

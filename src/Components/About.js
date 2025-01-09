@@ -16,12 +16,7 @@ const About = () => {
           Access to exclusive Hostels, PGs and rent without fear of misinformation
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
-        </p>
-        <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+          we aim to simplify the process of finding student accommodations. Our platform connects students with verified hostels and PGs, providing a seamless experience to search, compare, and book the perfect place to stay.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
