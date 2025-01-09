@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -28,6 +29,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
+  /* animation: fade-down 0.5s; */
 }
 .navbar-menu-container {
   display: none;
@@ -64,6 +66,7 @@ nav {
   position: relative;
   display: flex;
   padding-top: 3rem;
+  animation: fade-up 0.5s;
 }
 .home-bannerImage-container {
   position: absolute;
@@ -73,8 +76,9 @@ nav {
   max-width: 700px;
 }
 .home-image-section {
-  max-width: 600px;
+  max-width: 500px;
   flex: 1;
+  animation: fade-up 0.7s;
 }
 .home-text-section {
   flex: 1;
@@ -438,5 +442,27 @@ nav {
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 import BannerBackground from '../Assets/back.png'
 import { FiArrowRight } from 'react-icons/fi'
 import BannerImage from '../Assets/banner.png'
-import { useRef } from 'react'
+// import { useRef } from 'react'
 
 const Home = () => {
   return (
