@@ -8,17 +8,17 @@ const Work = () => {
     {
       image: PickMeals,
       title: "Seamless Rent and Bill Management",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      text: "Streamlined systems for rent payments and settling utility bills like water and electricity, reducing hassle for both tenants and owners.",
     },
     {
       image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      title: "Verified Listings with Transparent Details",
+      text: "Access thoroughly verified hostels and PGs with detailed descriptions, photos, and ratings, ensuring trust and transparency.",
     },
     {
       image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      title: "Effortless Search and Booking",
+      text: "Advanced search filters and a user-friendly interface make finding and booking the ideal accommodation quick and easy.",
     },
   ];
   return (

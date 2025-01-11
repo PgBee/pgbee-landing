@@ -279,6 +279,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 .work-section-info {
   width: 290px;
@@ -303,6 +304,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  animation: fade-up 0.7s;
 }
 .work-section-info p {
   flex: 1;
@@ -322,8 +324,42 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Ensure it's above other elements */
   cursor: pointer;
+  animation: fade-right 2s;
+  transition-duration: 0.5s;
 }
 
+.fixed-component:hover {
+  background-color: #128C7E;
+  transition-duration: 0.5s;
+}
+
+.menu-drawer {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.Home{
+  animation: appear 0.5s;
+  animation-timeline: view();
+  animation-range: 0% cover 40%;
+}
+
+.About{
+  animation: appear 0.5s;
+  animation-timeline: view();
+  animation-range: 0% cover 40%;
+}
+
+.Work{
+  animation: appear 0.5s;
+  animation-timeline: view();
+  animation-range: 0% cover 40%;
+}
+
+.Contact{
+  animation: appear 0.5s;
+  animation-timeline: view();
+  animation-range: 0% cover 40%;
+}
 
 @media (max-width: 1000px) {
   .navbar-links-container a {
@@ -464,5 +500,29 @@ nav {
   100% {
     opacity: 1;
     transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+    transform: translateY(-100px);
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
   }
 }

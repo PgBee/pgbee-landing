@@ -5,11 +5,11 @@ import Work from './Components/Work';
 import Contacts from './Components/Contacts';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import BeeSupport from './Components/BeeSupport';
 
 function App() {
-  const aboutRef = useRef(null)
+  // const aboutRef = useRef(null)
   // useEffect(() => {
   //   aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
   // }, [])
@@ -17,18 +17,18 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <div id="Home">
-        <Home/>
-      </div>
-      <div ref={aboutRef} id='About'>
-        <About/>
-      </div>
-      <div id='Work'>
-          <Work/>
-      </div>
-      <Contacts/>
-      <Footer/>
-      <BeeSupport/>
+        <div className="Home">
+          <Home/>
+        </div>
+        <div className='About'>
+          <About/>
+        </div>
+        <div className='Work'>
+            <Work/>
+        </div>
+        <Contacts/>
+        <Footer/>
+        <BeeSupport/>
     </div>
   );
 }
