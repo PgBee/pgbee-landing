@@ -22,11 +22,18 @@ const Home = () => {
             <p className='primary-text'>
               Find the best PGs, hostels and rooms nearby
             </p>
-            <a href="https://wa.me/918848799145" target="_blank" rel="noopener noreferrer">
+
+            <div className='align'>
+            <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer">
             <button className='secondary-button'>
-              Book Now <FiArrowRight/>
+               Owner's <FiArrowRight/>
             </button>
             </a>
+              <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer">
+            <button className='secondary-button2'>
+            Student<FiArrowRight/></button>
+              </a>
+             </div>
           </div>
         </div>
     </div>
