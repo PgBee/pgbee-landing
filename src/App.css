@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -113,8 +114,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-   height: 55px;
+  height: 55px;
   width:170px;
+  text-decoration: none;
 }
 
 .secondary-button2 {
