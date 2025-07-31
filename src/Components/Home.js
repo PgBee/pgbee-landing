@@ -2,19 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import BannerBackground from '../Assets/back.png';
 import BannerImage from '../Assets/banner.png';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer /*, toast */ } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
-  const handleOwnerClick = () => {
-    toast('Currently only in owner mobile app !', {
-      position: "top-right",
-      autoClose: 2000,
-      hideProgressBar: false,
-      progress: undefined,
-      style: { backgroundColor: '#fff200', color: '#000' }
-    });
-  };
+  // const handleOwnerClick = () => {
+  //   toast('Currently only in owner mobile app !', {
+  //     position: "top-right",
+  //     autoClose: 2000,
+  //     hideProgressBar: false,
+  //     progress: undefined,
+  //     style: { backgroundColor: '#fff200', color: '#000' }
+  //   });
+  // };
 
   return (
     <div className='home-container'>
@@ -51,19 +51,19 @@ const Home = () => {
           </p>
 
           <div className='align'>
-            <button 
-              className='secondary-button'
-              onClick={handleOwnerClick}
-            >
-              Search Now
-            </button>
-
-            <button 
-              onClick={() => window.location.href = "https://app.pgbee.in"} 
-              className='secondary-button2'
-            >
-              Referral Code : PGB100
-            </button>
+            <div className='button-group'>
+              <button 
+                className='secondary-button'
+                onClick={() => window.location.href = "https://app.pgbee.in"}
+              >
+                Search Now
+              </button>
+              <button  
+                className='secondary-button2'
+              >
+                Referral Code : PGB100
+              </button>
+            </div>
           </div>
         </motion.div>
       </div>

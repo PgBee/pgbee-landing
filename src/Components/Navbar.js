@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../Assets/PgBee.svg";
-import { BsCart2 } from "react-icons/bs";
+// import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -47,15 +47,10 @@ const Navbar = () => {
         <img src={Logo} alt="" width="100"/>
       </div>
       <div className="navbar-links-container">
-        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#testimonial">Testimonials</a>
         <a href="#contact">Contact</a>
-        <a href="#cart">
-          <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <a href="https://wa.me/918848799145" target="_blank" rel="noopener noreferrer">
-          <button className="primary-button">Book Now</button>
+        <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer">
+          <button className="primary-button">Search Now</button>
         </a>
       </div>
       <div className="navbar-menu-container">

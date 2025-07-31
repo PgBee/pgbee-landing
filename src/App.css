@@ -1,3 +1,24 @@
+/* Button group for Home.js vertical stack on mobile */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 64px;
+    width: 100%;
+  }
+  .button-group .secondary-button,
+  .button-group .secondary-button2 {
+    width: 300px;
+    min-width: 0;
+    max-width: none;
+  }
+}
 
 * {
   margin: 0;
@@ -30,6 +51,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
+  z-index: 10;
+  position: relative;
   /* animation: fade-down 0.5s; */
 }
 .navbar-menu-container {
@@ -42,6 +65,7 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: white;
