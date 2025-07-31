@@ -15,7 +15,7 @@ const About = () => {
           Access to exclusive Hostels, PGs and rent without fear of misinformation
         </h1>
         <p className="primary-text">
-          we aim to simplify the process of finding student accommodations. Our platform connects students with verified hostels and PGs, providing a seamless experience to search, compare, and book the perfect place to stay.
+          We aim to simplify the process of finding student accommodations. Our platform connects students with verified hostels and PGs, providing a seamless experience to search, compare, and book the perfect place to stay.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>

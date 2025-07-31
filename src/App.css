@@ -80,6 +80,7 @@ nav {
   max-width: 500px;
   flex: 1;
   animation: fade-up 0.7s;
+  margin-right:50px;
 }
 .home-text-section {
   flex: 1;
@@ -93,12 +94,14 @@ nav {
   color: #4c4c4c;
   /* line-height: 5rem; */
   max-width: 600px;
+  margin-left:18px
 }
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
+  margin-left:22px;
 }
 .secondary-button {
    padding:4px;
@@ -120,6 +123,7 @@ nav {
 }
 
 .secondary-button2 {
+  margin-top: 20px;
   padding:10px;
   background-color: #ffffff;
   outline: none;
@@ -155,6 +159,7 @@ nav {
   margin-left: 0.75rem;
   font-size: 1.5rem;
 }
+
 
 .secondary-button2:hover {
   background-color: #aeaea6;
@@ -433,34 +438,37 @@ nav {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    
+    ;
   }
   .about-section-container {
     flex-direction: column;
   }
   .home-image-section,
   .about-section-image-container {
+    margin-top: 40px;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
   }
-  .primary-heading {
-    text-align: center;
-    max-width: 90%;
-  }
-  .primary-text {
-    text-align: center;
-    max-width: 80%;
-  }
+    .primary-heading {
+      text-align: center;
+      max-width: 90%;
+    }
+    .primary-text {
+      text-align: center;
+      max-width: 80%;
+    }
   .home-text-section,
   .about-section-text-container {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
   }
-  .secondary-button {
-    font-size: 1rem;
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-  }
+    .secondary-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+    }
   .about-section-container {
     margin-top: 5rem !important;
   }

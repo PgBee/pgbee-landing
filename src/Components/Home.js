@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
   const handleOwnerClick = () => {
-    toast('Currently only in owner mobile app !', {
+    toast('Hurray! You have won ₹100 cashback', {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
@@ -43,28 +43,33 @@ const Home = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
         >
-          <h1 className='primary-heading'>
-            Your Perfect Stay, Just a Click Away!
-          </h1>
-          <p className='primary-text'>
-            Find the best PGs, hostels and rooms nearby
-          </p>
+<div className="flex flex-col items-center text-center px-4 sm:px-0 ">
+  <h1 className="primary-heading text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 ">
+    Your Perfect Stay, Just a Click Away!
+  </h1>
 
-          <div className='align'>
-            <button 
-              className='secondary-button'
-              onClick={handleOwnerClick}
-            >
-              Search Now
-            </button>
+  <p className="primary-text text-base sm:text-lg text-gray-600 mb-6">
+    Find the best PGs, hostels and rooms nearby
+  </p>
 
-            <button 
-              onClick={() => window.location.href = "https://app.pgbee.in"} 
-              className='secondary-button2'
-            >
-              Referral Code : PGB100
-            </button>
-          </div>
+  {/* Responsive Buttons */}
+  <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+    <button 
+      className="secondary-button"
+      onClick={() => window.location.href = "https://app.pgbee.in"}
+    >
+      Search Now
+    </button>
+
+    <button 
+      onClick={handleOwnerClick}
+      className="secondary-button2"
+    >
+      Referral Code : PGB100
+    </button>
+  </div>
+</div>
+
         </motion.div>
       </div>
 
