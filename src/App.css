@@ -134,9 +134,9 @@ nav {
   align-items: center;
   justify-content: center;
   height: 55px;
+  width : 350px;    
   border:solid;
   border-color: #fff200;
-    width:130px;
 }
 
 .align{

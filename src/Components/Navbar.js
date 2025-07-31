@@ -51,7 +51,7 @@ const Navbar = () => {
         <a href="#about">About</a>
         <a href="#testimonial">Testimonials</a>
         <a href="#contact">Contact</a>
-        <a href="">
+        <a href="#cart">
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <a href="https://wa.me/918848799145" target="_blank" rel="noopener noreferrer">

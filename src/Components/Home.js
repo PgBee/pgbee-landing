@@ -55,14 +55,14 @@ const Home = () => {
               className='secondary-button'
               onClick={handleOwnerClick}
             >
-              Owner
+              Search Now
             </button>
 
             <button 
               onClick={() => window.location.href = "https://app.pgbee.in"} 
               className='secondary-button2'
             >
-              Student
+              Referral Code : PGB100
             </button>
           </div>
         </motion.div>
