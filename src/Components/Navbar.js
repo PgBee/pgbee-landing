@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Logo from "../Assets/PgBee.svg";
 // import { BsCart2 } from "react-icons/bs";
-import { HiOutlineBars3 } from "react-icons/hi2";
-import { IoClose } from "react-icons/io5";
+import HamburgerIcon from "./HamburgerIcon";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
+// import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -50,10 +49,8 @@ const Navbar = () => {
           <button className="primary-button">Search Now</button>
         </a>
       </div>
-      <div className="navbar-menu-container" onClick={() => setOpenMenu(!openMenu)}>
-        <div className={`hamburger-icon${openMenu ? " open" : ""}`}>
-          {openMenu ? <IoClose size={32} /> : <HiOutlineBars3 size={32} />}
-        </div>
+      <div className="navbar-menu-container">
+        <HamburgerIcon isOpen={openMenu} toggle={() => setOpenMenu(!openMenu)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right" transitionDuration={400}>
         <Box
