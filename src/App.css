@@ -57,6 +57,24 @@ nav {
 }
 .navbar-menu-container {
   display: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media (max-width: 800px) {
+  .navbar-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+}
+
+.hamburger-icon {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger-icon.open {
+  transform: rotate(90deg) scale(1.1);
 }
 .navbar-links-container a {
   margin-right: 3rem;
