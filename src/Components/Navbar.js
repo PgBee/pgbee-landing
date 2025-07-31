@@ -22,12 +22,17 @@ const Navbar = () => {
   const menuOptions = [
     {
       text: "About",
-      icon: <InfoIcon />, 
+      icon: <InfoIcon />,
       href: "#About"
     },
     {
+      text: "Working",
+      icon: <InfoIcon />,
+      href: "#Work"
+    },
+    {
       text: "Contact",
-      icon: <PhoneRoundedIcon />, 
+      icon: <PhoneRoundedIcon />,
       href: "#Contact"
     },
   ];
@@ -38,6 +43,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <a href="#About">About</a>
+        <a href="#Work">Working</a>
         <a href="#Contact">Contact</a>
         <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer">
           <button className="primary-button">Search Now</button>

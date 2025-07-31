@@ -2,8 +2,9 @@ import React from "react";
 import Logo from "../Assets/PgBee.svg";
 import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
-import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -13,18 +14,24 @@ const Footer = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
+          <a href="https://twitter.com/pgbee_in" target="_blank" rel="noopener noreferrer">
+            <BsTwitter />
+          </a>
+          <a href="https://linkedin.com/company/pgbee" target="_blank" rel="noopener noreferrer">
+            <SiLinkedin />
+          </a>
+          <a href="https://facebook.com/pgbee.in" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
+          <a href="https://www.instagram.com/pgbee.in/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
         </div>
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
           <span>Quality</span>
           <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
           <span>Testimonials</span>
           <span>Work</span>
         </div>
