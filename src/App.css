@@ -25,7 +25,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -57,6 +57,24 @@ nav {
 }
 .navbar-menu-container {
   display: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media (max-width: 800px) {
+  .navbar-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+}
+
+.hamburger-icon {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger-icon.open {
+  transform: rotate(90deg) scale(1.1);
 }
 .navbar-links-container a {
   margin-right: 3rem;
@@ -150,7 +168,7 @@ nav {
   border: none;
   border-radius: 5rem;
   font-size: 1.1rem;
-  cursor: pointer;
+  cursor: default;
   font-weight: 600;
   color: rgb(0, 0, 0);
   transition: 0.2s;
@@ -161,6 +179,7 @@ nav {
   width : 350px;    
   border:solid;
   border-color: #fff200;
+  pointer-events: none;
 }
 
 .align{
