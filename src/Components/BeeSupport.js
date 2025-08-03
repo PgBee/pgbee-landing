@@ -2,7 +2,7 @@ import React from 'react'
 
 const BeeSupport = () => {
   const message = encodeURIComponent(
-    `referal code: PGB100\nname: \ndepartment;\nphone:\nhostel name:`
+    `Name: \nDepartment;\nPhone:\nHostel Name:`
   );
   const whatsappUrl = `https://wa.me/916235401737?text=${message}`;
   return (

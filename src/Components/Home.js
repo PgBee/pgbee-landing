@@ -58,11 +58,11 @@ const Home = () => {
               >
                 Search Now
               </button>
-              <button  
+              {/* <button  
                 className='secondary-button2'
               >
                 Referral Code : PGB100
-              </button>
+              </button> */}
             </div>
           </div>
         </motion.div>
