@@ -30,10 +30,10 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Quality</span>
-          <span>Help</span>
-          <span>Testimonials</span>
-          <span>Work</span>
+          <a href="#About"><span>About</span></a>
+          <a href="#Work"><span>Working</span></a>
+          <a href="#Contact"><span>Contact</span></a>
+          
         </div>
         <div className="footer-section-columns">
           {/* <span>244-5333-7783</span>
@@ -42,8 +42,15 @@ const Footer = () => {
           <span>contact@food.com</span> */}
         </div>
         <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <a href="/Terms and Conditions.pdf" target="_blank" rel="noopener noreferrer">
+            <span>Terms & Conditions</span>
+          </a>
+          <a href="/Privacy Policy.pdf" target="_blank" rel="noopener noreferrer">
+            <span>Privacy Policy</span>
+          </a>
+          <a href="/Refund Policy.pdf" target="_blank" rel="noopener noreferrer">
+            <span>Refund Policy</span>
+          </a>
         </div>
       </div>
     </div>
