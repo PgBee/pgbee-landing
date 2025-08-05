@@ -14,7 +14,7 @@
   }
   .button-group .secondary-button,
   .button-group .secondary-button2 {
-    width: 300px;
+    width: 200px;
     min-width: 0;
     max-width: none;
   }
@@ -400,22 +400,128 @@ nav {
 
 .fixed-component {
   position: fixed;
-  bottom: 10px; /* Adjust position as needed */
-  right: 10px; /* Adjust position as needed */
-  background-color: #25D366; /* Example background color */
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it's above other elements */
+  padding: 0;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  z-index: 1000;
   cursor: pointer;
-  animation: fade-right 2s;
-  transition-duration: 0.5s;
+  animation: fade-right 2s, float 3s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fixed-component:hover {
-  background-color: #128C7E;
-  transition-duration: 0.5s;
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+}
+
+.bee-support-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+  transition: gap 0.3s ease, justify-content 0.3s ease, padding 0.3s ease;
+}
+
+.fixed-component:hover .bee-support-content {
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 12px 18px;
+}
+
+.whatsapp-icon {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.fixed-component:hover .whatsapp-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.bee-support-text {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.fixed-component:hover .bee-support-text {
+  opacity: 1;
+  max-width: 100px;
+  margin-left: 5px;
+}
+
+.pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(37, 211, 102, 0.6);
+  border-radius: 50%;
+  animation: pulse-ring 2s infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Pulse ring animation */
+@keyframes pulse-ring {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .fixed-component {
+    bottom: 15px;
+    right: 15px;
+    min-width: 55px;
+    min-height: 55px;
+  }
+  
+  .bee-support-content {
+    padding: 10px 15px;
+  }
+  
+  .whatsapp-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .bee-support-text {
+    font-size: 13px;
+  }
 }
 
 .menu-drawer {
