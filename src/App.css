@@ -319,6 +319,25 @@ nav {
   color: #4c4c4c;
   cursor: pointer;
 }
+
+.footer-section-columns a {
+  text-decoration: none;
+  margin: 0.25rem 0rem;
+  display: block;
+}
+
+.footer-section-columns a span {
+  margin: 0;
+  font-weight: 600;
+  color: #4c4c4c;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-section-columns a:hover span {
+  color: #FFF200;
+  transform: translateX(3px);
+}
 .testimonial-section-bottom {
   margin-top: 2rem;
   background-color: white;
@@ -522,6 +541,63 @@ nav {
   .bee-support-text {
     font-size: 13px;
   }
+
+  /* Mobile expanded state */
+  .mobile-expanded {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    transform: scale(1.1) !important;
+    width: 120px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
+    animation: expandPulse 0.3s ease-out !important;
+  }
+
+  .mobile-expanded .bee-support-content {
+    padding: 12px 18px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .mobile-expanded .whatsapp-icon {
+    transform: scale(1.1) !important;
+    color: white !important;
+  }
+
+  .mobile-expanded .bee-support-text {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: white !important;
+    font-weight: 600 !important;
+  }
+
+  @keyframes expandPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1.1); }
+  }
+}
+
+/* BeeSupport button styling for both anchor and button elements */
+.bee-support-button {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.bee-support-button:focus {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+.bee-support-button:focus-visible {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
 }
 
 .menu-drawer {
