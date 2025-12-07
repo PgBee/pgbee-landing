@@ -8,7 +8,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-gray-50 to-gray-100 mt-32 pt-20 pb-8">
+    <footer className="bg-linear-to-br from-gray-50 to-gray-100 mt-32 pt-20 pb-8">
       <div className="max-w-[1900px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Section */}
@@ -39,9 +39,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-gray-800 text-lg mb-5">Quick Links</h3>
             <div className="space-y-3">
-              <a href="#About" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">About Us</a>
-              <a href="#Work" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">How it Works</a>
-              <a href="#Contact" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">Contact</a>
+              <a href="#about" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">About Us</a>
+              <a href="#work" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">How it Works</a>
+              <a href="#contact" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">Contact</a>
               <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">Search Properties</a>
             </div>
           </div>
