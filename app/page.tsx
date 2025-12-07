@@ -10,20 +10,14 @@ import BeeSupport from '@/components/BeeSupport'
 
 export default function Page() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="Home">
-        <Home />
-      </div>
-      <div className='About'>
-        <About />
-      </div>
-      <div className='Work'>
-        <Work />
-      </div>
-      <Contacts />
-      <Footer />
-      <BeeSupport />
+    <div className=''>
+        <Navbar />
+        <div id='home'><Home /></div>
+        <div id='about'><About /></div>
+        <div id='work'><Work /></div>
+        <div id='contact'><Contacts /></div>
+        <Footer />
+        <BeeSupport />
     </div>
   )
-}
+}   

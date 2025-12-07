@@ -6,21 +6,36 @@ const Contact = () => {
   const email = 'pgbee.company@gmail.com'
 
   return (
-    <section className="flex items-center justify-center flex-col my-24 max-md:my-12" id="Contact">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-700 max-w-2xl max-md:text-center max-md:max-w-[90%] leading-tight">Have Question In Mind?</h1>
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-700 max-w-2xl max-md:text-center max-md:max-w-[90%] leading-tight">Let Us Help You</h1>
-      <div className="bg-white max-w-2xl max-md:max-w-full w-full mt-12 max-md:mt-8 flex items-center p-4 rounded-full max-md:flex-col max-md:items-center max-md:rounded-2xl">
-        <input 
-          type="text" 
-          placeholder="yourmail@gmail.com"
-          className="flex-1 h-full border-none outline-none text-2xl max-md:text-base p-2 max-md:p-4 max-md:mb-3 max-md:text-center"
-        />
-        <a 
-          href={`mailto:${email}`} 
-          className="h-14 w-44 max-md:w-52 px-1 py-0 bg-yellow-400 hover:bg-yellow-300 border-none rounded-full text-base font-semibold text-black cursor-pointer transition-colors duration-200 no-underline flex items-center justify-center"
-        >
-          Submit
-        </a>
+    <section className="py-16 sm:py-20 lg:py-28 w-full">
+      <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-600 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">Get In Touch</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 leading-tight">
+            Have Questions In Mind?
+          </h2>
+          <p className="text-base sm:text-lg text-gray-600">Let us help you find your perfect stay</p>
+        </div>
+        
+        <div className="bg-white max-w-2xl mx-auto shadow-lg rounded-2xl p-4 sm:p-6 border border-gray-100">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+            <input 
+              type="email" 
+              placeholder="yourmail@gmail.com"
+              className="w-full sm:flex-1 h-12 sm:h-14 border border-gray-200 outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 rounded-full px-5 sm:px-6 text-sm sm:text-base text-gray-700 transition-all duration-200"
+            />
+            <a 
+              href={`mailto:${email}`} 
+              className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 rounded-full text-sm sm:text-base font-bold text-black cursor-pointer transition-all duration-300 hover:shadow-lg no-underline flex items-center justify-center hover:-translate-y-0.5"
+            >
+              Submit →
+            </a>
+          </div>
+        </div>
+        
+        <div className="mt-8 sm:mt-12 text-center">
+          <p className="text-xs sm:text-sm text-gray-500 mb-4">Or reach us directly at</p>
+          <a href={`mailto:${email}`} className="text-sm sm:text-base font-semibold text-yellow-600 hover:text-yellow-700 transition-colors duration-200">{email}</a>
+        </div>
       </div>
     </section>
   )

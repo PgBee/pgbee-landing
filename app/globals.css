@@ -1,16 +1,10 @@
 @import "tailwindcss";
 
+/* Global Reset & Base Styles */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
   scroll-behavior: smooth;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 html {
@@ -18,26 +12,23 @@ html {
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: #fafafa;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-/* Main container */
-main {
-  min-height: 100vh;
-  width: 85vw;
-  max-width: 1900px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-@media (max-width: 800px) {
-  main {
-    width: 95vw;
-  }
+/* Ensure anchored targets account for sticky headers by offsetting scroll position */
+:target {
+  scroll-margin-top: 5rem;
 }
 
-/* Custom animations */
+/* Keyframe Animations */
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -110,8 +101,9 @@ main {
   100% { transform: scale(1.1); }
 }
 
-/* Tailwind animation utilities */
+/* Tailwind Component Layer - Custom Utilities */
 @layer utilities {
+  /* Animation Utilities */
   .animate-fade-up {
     animation: fade-up 0.5s ease-out;
   }
@@ -137,16 +129,47 @@ main {
   .animate-pulse-ring {
     animation: pulse-ring 2s infinite;
   }
+
+  /* Text Clamps for Responsive Typography */
+  .text-clamp-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+
+  .text-clamp-subheading {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  /* Responsive Container */
+  .container-app {
+    min-height: 100vh;
+    /* Use a full-width responsive container with a sensible max-width
+       to avoid forcing viewport-relative widths that break alignment.
+       This makes the class safe to apply sitewide while keeping
+       consistent gutters via padding. */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 800px) {
+    .container-app {
+      /* Reduce gutters a bit on small screens */
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
 }
 
-/* Fixed component (WhatsApp button) */
+/* Fixed Component Styles (WhatsApp Button) */
 .fixed-component {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: white;
-  padding: 0;
+  border: none;
   border-radius: 50px;
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
   z-index: 1000;
@@ -167,6 +190,17 @@ main {
   box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
 }
 
+.fixed-component:focus {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+.fixed-component:focus-visible {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+/* Mobile Expanded State */
 @media (max-width: 768px) {
   .fixed-component {
     bottom: 15px;
@@ -182,5 +216,29 @@ main {
     border-radius: 25px !important;
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
     animation: expandPulse 0.3s ease-out !important;
+  }
+
+  .mobile-expanded .bee-support-content {
+    padding: 12px 18px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .mobile-expanded .whatsapp-icon {
+    transform: scale(1.1) !important;
+    color: white !important;
+  }
+
+  .mobile-expanded .bee-support-text {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: white !important;
+    font-weight: 600 !important;
+  }
+
+  @keyframes expandPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1.1); }
   }
 }
