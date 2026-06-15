@@ -20,29 +20,29 @@ const Navbar = () => {
     {
       text: "About",
       icon: <InfoOutlinedIcon />,
-      href: "#about"
+      href: "/#about"
     },
     {
       text: "Working",
       icon: <WorkOutlineIcon />,
-      href: "#work"
+      href: "/#work"
     },
     {
       text: "Contact",
       icon: <ContactMailOutlinedIcon />,
-      href: "#contact"
+      href: "/#contact"
     },
   ]
   return (
     <nav className="sticky m-1">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4  mx-auto">
-        <div className="shrink-0 w-[90px] p-4 sm:w-[100px] lg:w-[110px]">
+        <a href="/" className="shrink-0 w-[90px] p-4 sm:w-[100px] lg:w-[110px] block cursor-pointer">
           <Image src="/PgBee.svg" alt="PgBee Logo" width={110} height={50} className="w-full h-auto" priority />
-        </div>
+        </a>
         <div className="hidden lg:flex items-center gap-8 xl:gap-10">
-          <a href="#about" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">About</a>
-          <a href="#work" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">How it Works</a>
-          <a href="#contact" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">Contact</a>
+          <a href="/#about" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">About</a>
+          <a href="/#work" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">How it Works</a>
+          <a href="/#contact" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">Contact</a>
           <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer">
             <button className="px-6 xl:px-8 py-2.5 xl:py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-sm xl:text-base rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">Get Started</button>
           </a>
