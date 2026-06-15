@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure anchored targets account for sticky headers by offsetting scroll position */
+:target {
+  scroll-margin-top: 5rem;
+}
+
+/* Keyframe Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expandPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1.1); }
+}
+
+/* Tailwind Component Layer - Custom Utilities */
+@layer utilities {
+  /* Animation Utilities */
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out;
+  }
+
+  .animate-fade-down {
+    animation: fade-down 0.5s ease-out;
+  }
+
+  .animate-fade-right {
+    animation: fade-right 0.5s ease-out;
+  }
+
+  .animate-appear {
+    animation: appear 0.5s ease-out;
+    animation-timeline: view();
+    animation-range: 0% cover 40%;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-ring {
+    animation: pulse-ring 2s infinite;
+  }
+
+  /* Text Clamps for Responsive Typography */
+  .text-clamp-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+
+  .text-clamp-subheading {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  /* Responsive Container */
+  .container-app {
+    min-height: 100vh;
+    /* Use a full-width responsive container with a sensible max-width
+       to avoid forcing viewport-relative widths that break alignment.
+       This makes the class safe to apply sitewide while keeping
+       consistent gutters via padding. */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 800px) {
+    .container-app {
+      /* Reduce gutters a bit on small screens */
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+}
+
+/* Fixed Component Styles (WhatsApp Button) */
+.fixed-component {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  z-index: 1000;
+  cursor: pointer;
+  animation: fade-right 2s, float 3s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-component:hover {
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+}
+
+.fixed-component:focus {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+.fixed-component:focus-visible {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+/* Mobile Expanded State */
+@media (max-width: 768px) {
+  .fixed-component {
+    bottom: 15px;
+    right: 15px;
+    min-width: 55px;
+    min-height: 55px;
+  }
+
+  .mobile-expanded {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    transform: scale(1.1) !important;
+    width: 120px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
+    animation: expandPulse 0.3s ease-out !important;
+  }
+
+  .mobile-expanded .bee-support-content {
+    padding: 12px 18px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .mobile-expanded .whatsapp-icon {
+    transform: scale(1.1) !important;
+    color: white !important;
+  }
+
+  .mobile-expanded .bee-support-text {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: white !important;
+    font-weight: 600 !important;
+  }
+
+  @keyframes expandPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1.1); }
+  }
+}

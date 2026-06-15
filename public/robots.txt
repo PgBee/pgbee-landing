@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+Allow: /
+
+Sitemap: https://pgbee.in/sitemap.xml

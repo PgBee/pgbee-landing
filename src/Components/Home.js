@@ -1,36 +1,77 @@
-import React from 'react'
-// import Navbar from './Navbar'
-import BannerBackground from '../Assets/back.png'
-import { FiArrowRight } from 'react-icons/fi'
-import BannerImage from '../Assets/banner.png'
-// import { useRef } from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import BannerBackground from '../Assets/back.png';
+import BannerImage from '../Assets/banner.png';
+import { ToastContainer /*, toast */ } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
+  // const handleOwnerClick = () => {
+  //   toast('Currently only in owner mobile app !', {
+  //     position: "top-right",
+  //     autoClose: 2000,
+  //     hideProgressBar: false,
+  //     progress: undefined,
+  //     style: { backgroundColor: '#fff200', color: '#000' }
+  //   });
+  // };
+
   return (
     <div className='home-container'>
-        <div className='home-banner-container'>
-          <div className='home-bannerImage-container'>
-            <img src = {BannerBackground} width='400' alt=''/>
-          </div>
-          <div className="home-image-section">
-            <img src={BannerImage} alt="" />
-          </div>
-          <div className='home-text-section'>
-            <h1 className='primary-heading'>
-              Your Perfect Stay, Just a Click Away!
-            </h1>
-            <p className='primary-text'>
-              Find the best PGs, hostels and rooms nearby
-            </p>
-            <a href="https://wa.me/918848799145" target="_blank" rel="noopener noreferrer">
-            <button className='secondary-button'>
-              Book Now <FiArrowRight/>
-            </button>
-            </a>
-          </div>
-        </div>
-    </div>
-  )
-}
+      <div className='home-banner-container'>
+        <motion.div
+          className='home-bannerImage-container'
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, ease: 'easeOut' }}
+        >
+          <img src={BannerBackground} width='400' alt='Banner Background' />
+        </motion.div>
 
-export default Home
+        <motion.div
+          className="home-image-section"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2, ease: 'easeOut', delay: 0.5 }}
+        >
+          <img src={BannerImage} alt="Banner" />
+        </motion.div>
+
+        <motion.div
+          className='home-text-section'
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
+        >
+          <h1 className='primary-heading'>
+            Your Perfect Stay, Just a Click Away!
+          </h1>
+          <p className='primary-text'>
+            Find the best PGs, hostels and rooms nearby
+          </p>
+
+          <div className='align'>
+            <div className='button-group'>
+              <button 
+                className='secondary-button'
+                onClick={() => window.location.href = "https://app.pgbee.in"}
+              >
+                Search Now
+              </button>
+              {/* <button  
+                className='secondary-button2'
+              >
+                Referral Code : PGB100
+              </button> */}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Toast Notification Container */}
+      <ToastContainer />
+    </div>
+  );
+};
+
+export default Home;
