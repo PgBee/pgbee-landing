@@ -29,7 +29,7 @@ const Footer = () => {
               <a href="https://facebook.com/pgbee.in" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-white hover:bg-yellow-400 transition-all duration-300 hover:-translate-y-1">
                 <FaFacebookF size={18} />
               </a>
-              <a href="https://www.instagram.com/pgbe.e" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-white hover:bg-yellow-400 transition-all duration-300 hover:-translate-y-1">
+              <a href="https://www.instagram.com/pgbee.in" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-white hover:bg-yellow-400 transition-all duration-300 hover:-translate-y-1">
                 <FaInstagram size={18} />
               </a>
             </div>
