@@ -12,9 +12,6 @@ const redHatDisplay = Red_Hat_Display({
 export const metadata: Metadata = {
   title: 'PgBee',
   description: 'Accommodation in one tap - Find the best PGs, hostels and rooms nearby',
-  icons: {
-    icon: '/favicon.ico',
-  },
 }
 
 export default function RootLayout({

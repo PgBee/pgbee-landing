@@ -36,8 +36,9 @@ const Navbar = () => {
   return (
     <nav className="sticky m-1">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4  mx-auto">
-        <a href="/" className="shrink-0 w-[90px] p-4 sm:w-[100px] lg:w-[110px] block cursor-pointer">
-          <Image src="/PgBee.svg" alt="PgBee Logo" width={110} height={50} className="w-full h-auto" priority />
+        <a href="/" className="shrink-0 flex items-center gap-2 cursor-pointer">
+          <Image src="/icon.png" alt="PgBee Icon" width={32} height={32} className="w-8 h-8 sm:w-10 sm:h-10" priority />
+          <Image src="/logo.png" alt="PgBee Logo" width={120} height={32} className="w-16 h-8 sm:w-22 sm:h-6" priority />
         </a>
         <div className="hidden lg:flex items-center gap-8 xl:gap-10">
           <a href="/#about" className="text-gray-700 font-medium text-sm xl:text-base hover:text-yellow-500 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-yellow-500 after:transition-all after:duration-300">About</a>

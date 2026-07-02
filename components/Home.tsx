@@ -35,7 +35,7 @@ const Home = () => {
               </button>
               <button 
                 className='w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-white hover:bg-gray-50 text-gray-800 font-bold text-base sm:text-lg rounded-full border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300'
-                onClick={() => document.getElementById('About')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
               </button>
@@ -48,7 +48,7 @@ const Home = () => {
                 <p className='text-xs sm:text-sm text-gray-600 mt-1'>Verified Properties</p>
               </div>
               <div className='text-center lg:text-left'>
-                <p className='text-2xl sm:text-3xl font-bold text-gray-900'>100+</p>
+                <p className='text-2xl sm:text-3xl font-bold text-gray-900'>1000+</p>
                 <p className='text-xs sm:text-sm text-gray-600 mt-1'>Happy Students</p>
               </div>
               {/* <div className='text-center lg:text-left'>
