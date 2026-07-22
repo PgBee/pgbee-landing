@@ -9,7 +9,7 @@ const BeeSupport = () => {
   const message = encodeURIComponent(
     `Name: \nDepartment;\nPhone:\nHostel Name:`
   )
-  const whatsappUrl = `https://wa.me/916235401737?text=${message}`
+  const whatsappUrl = `https://wa.me/919496908938?text=${message}`
 
   useEffect(() => {
     const checkMobile = () => {
@@ -61,7 +61,7 @@ const BeeSupport = () => {
           className="fixed bottom-6 right-6 z-40 group"
         >
           <div className="relative">
-            <div className="flex items-center gap-3 px-6 py-5 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl transition-all duration-300 hover:shadow-green-500/50 hover:scale-105">
+            <div className="flex items-center gap-3 px-6 py-5 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl transition-all duration-300 hover:shadow-green-500/50">
               <svg 
                 viewBox="0 0 24 24" 
                 fill="currentColor" 

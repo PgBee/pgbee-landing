@@ -7,7 +7,7 @@ const BeeSupport = () => {
   const message = encodeURIComponent(
     `Name: \nDepartment;\nPhone:\nHostel Name:`
   );
-  const whatsappUrl = `https://wa.me/916235401737?text=${message}`;
+  const whatsappUrl = `https://wa.me/919496908938?text=${message}`;
 
   // Check if device is mobile
   useEffect(() => {

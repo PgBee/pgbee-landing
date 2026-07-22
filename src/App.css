@@ -144,7 +144,7 @@ nav {
 }
 .secondary-button {
    padding:4px;
-  background-color: #fff200;
+  background-color: #ffe536;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -178,7 +178,7 @@ nav {
   height: 55px;
   width : 350px;    
   border:solid;
-  border-color: #fff200;
+  border-color: #ffe536;
   pointer-events: none;
 }
 

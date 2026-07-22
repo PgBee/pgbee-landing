@@ -62,14 +62,14 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding sx={{ mb: 1 }}>
-                <ListItemButton component="a" href={item.href} sx={{ borderRadius: 2, background: '#f6f6f6', mb: 1, '&:hover': { background: '#fff200' } }}>
+                <ListItemButton component="a" href={item.href} sx={{ borderRadius: 2, background: '#f6f6f6', mb: 1, '&:hover': { background: '#ffe536' } }}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={<span style={{fontWeight:600, fontFamily:'Red Hat Display, sans-serif'}}>{item.text}</span>} />
                 </ListItemButton>
               </ListItem>
             ))}
             <ListItem disablePadding>
-            <ListItemButton component="a" href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer" sx={{ borderRadius: 2, background: '#fff200', mt: 2 }}>
+            <ListItemButton component="a" href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer" sx={{ borderRadius: 2, background: '#ffe536', mt: 2 }}>
               <ListItemText primary={<span style={{fontWeight:800, fontSize:'1.15rem', fontFamily:'Red Hat Display, sans-serif', display:'block', textAlign:'center'}}>Search Now</span>} sx={{ color: '#000' }} />
               </ListItemButton>
             </ListItem>
