@@ -3,8 +3,7 @@
 import React from "react"
 import Image from 'next/image'
 import { BsTwitter } from "react-icons/bs"
-import { SiLinkedin } from "react-icons/si"
-import { FaFacebookF, FaInstagram } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -24,7 +23,7 @@ const Footer = () => {
                 <BsTwitter size={18} />
               </a>
               <a href="https://linkedin.com/company/pgbee" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-white hover:bg-yellow-400 transition-all duration-300 hover:-translate-y-1">
-                <SiLinkedin size={18} />
+                <FaLinkedin size={18} />
               </a>
               <a href="https://facebook.com/pgbee.in" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-white hover:bg-yellow-400 transition-all duration-300 hover:-translate-y-1">
                 <FaFacebookF size={18} />
