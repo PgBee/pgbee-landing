@@ -4,6 +4,7 @@ import React from "react"
 import Image from 'next/image'
 import { BsTwitter } from "react-icons/bs"
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { APP_URL } from "../lib/appUrl";
 
 const Footer = () => {
   return (
@@ -41,7 +42,7 @@ const Footer = () => {
               <a href="/#about" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">About Us</a>
               <a href="/#work" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">How it Works</a>
               <a href="/#contact" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">Contact</a>
-              <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">Search Properties</a>
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-yellow-500 hover:translate-x-1 transition-all duration-200">Search Properties</a>
             </div>
           </div>
 

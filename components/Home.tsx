@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { APP_URL } from "../lib/appUrl";
 
 const Home = () => {
   return (
@@ -29,7 +30,7 @@ const Home = () => {
             <div className='flex flex-col sm:flex-row gap-3 sm:gap-4'>
               <button 
                 className='w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base sm:text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1'
-                onClick={() => window.location.href = "https://app.pgbee.in"}
+                onClick={() => window.location.href = APP_URL}
               >
                 Search Now →
               </button>
