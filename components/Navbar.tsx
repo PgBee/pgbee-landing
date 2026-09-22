@@ -37,7 +37,13 @@ const Navbar = () => {
     <nav className="sticky m-1">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4  mx-auto">
         <a href="/" className="shrink-0 flex items-center gap-2 cursor-pointer">
-          <Image src="/icon.png" alt="PgBee Icon" width={32} height={32} className="w-8 h-8 sm:w-10 sm:h-10" priority />
+          {/* public/pgbee-icon.png, not app/icon.png. The latter is a Next
+              file-based metadata convention served by a generated route, and
+              the image optimizer cannot read an upstream route - it answers
+              /_next/image?url=%2Ficon.png with "upstream response is invalid"
+              at every width, so the logo rendered broken. app/icon.png stays
+              in place as the favicon. */}
+          <Image src="/pgbee-icon.png" alt="PgBee Icon" width={32} height={32} className="w-8 h-8 sm:w-10 sm:h-10" priority />
           <Image src="/logo.png" alt="PgBee Logo" width={120} height={32} className="w-16 h-8 sm:w-22 sm:h-6" priority />
         </a>
         <div className="hidden lg:flex items-center gap-8 xl:gap-10">
