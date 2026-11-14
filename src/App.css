@@ -24,7 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   scroll-behavior: smooth;
 }
 img {
@@ -143,7 +143,7 @@ nav {
   margin: 1.5rem 0rem;
 }
 .secondary-button {
-   padding:4px;
+  padding: 4px;
   background-color: #ffe536;
   outline: none;
   border: none;
@@ -157,12 +157,12 @@ nav {
   align-items: center;
   justify-content: center;
   height: 55px;
-  width:170px;
+  width: 170px;
   text-decoration: none;
 }
 
 .secondary-button2 {
-  padding:10px;
+  padding: 10px;
   background-color: #ffffff;
   outline: none;
   border: none;
@@ -176,17 +176,17 @@ nav {
   align-items: center;
   justify-content: center;
   height: 55px;
-  width : 350px;    
-  border:solid;
+  width: 350px;
+  border: solid;
   border-color: #ffe536;
   pointer-events: none;
 }
 
-.align{
+.align {
   display: flex;
   gap: 10px;
-  margin-bottom:15px;
-  margin-top:5px;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .secondary-button svg {
@@ -331,11 +331,13 @@ nav {
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .footer-section-columns a:hover span {
-  color: #FFF200;
+  color: #fff200;
   transform: translateX(3px);
 }
 .testimonial-section-bottom {
@@ -383,7 +385,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .work-section-info {
   width: 290px;
@@ -421,14 +422,16 @@ nav {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: white;
   padding: 0;
   border-radius: 50px;
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
   z-index: 1000;
   cursor: pointer;
-  animation: fade-right 2s, float 3s ease-in-out infinite;
+  animation:
+    fade-right 2s,
+    float 3s ease-in-out infinite;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   min-width: 60px;
@@ -439,7 +442,7 @@ nav {
 }
 
 .fixed-component:hover {
-  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
 }
@@ -452,7 +455,10 @@ nav {
   padding: 15px;
   position: relative;
   z-index: 2;
-  transition: gap 0.3s ease, justify-content 0.3s ease, padding 0.3s ease;
+  transition:
+    gap 0.3s ease,
+    justify-content 0.3s ease,
+    padding 0.3s ease;
 }
 
 .fixed-component:hover .bee-support-content {
@@ -500,7 +506,8 @@ nav {
 
 /* Float animation */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -528,23 +535,23 @@ nav {
     min-width: 55px;
     min-height: 55px;
   }
-  
+
   .bee-support-content {
     padding: 10px 15px;
   }
-  
+
   .whatsapp-icon {
     width: 18px;
     height: 18px;
   }
-  
+
   .bee-support-text {
     font-size: 13px;
   }
 
   /* Mobile expanded state */
   .mobile-expanded {
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
     transform: scale(1.1) !important;
     width: 120px !important;
     border-radius: 25px !important;
@@ -571,9 +578,15 @@ nav {
   }
 
   @keyframes expandPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.15); }
-    100% { transform: scale(1.1); }
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -591,12 +604,12 @@ nav {
 }
 
 .bee-support-button:focus {
-  outline: 2px solid #25D366;
+  outline: 2px solid #25d366;
   outline-offset: 2px;
 }
 
 .bee-support-button:focus-visible {
-  outline: 2px solid #25D366;
+  outline: 2px solid #25d366;
   outline-offset: 2px;
 }
 
@@ -604,25 +617,25 @@ nav {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
-.Home{
+.Home {
   animation: appear 0.5s;
   animation-timeline: view();
   animation-range: 0% cover 40%;
 }
 
-.About{
+.About {
   animation: appear 0.5s;
   animation-timeline: view();
   animation-range: 0% cover 40%;
 }
 
-.Work{
+.Work {
   animation: appear 0.5s;
   animation-timeline: view();
   animation-range: 0% cover 40%;
 }
 
-.Contact{
+.Contact {
   animation: appear 0.5s;
   animation-timeline: view();
   animation-range: 0% cover 40%;
@@ -781,13 +794,13 @@ nav {
   }
 }
 
-@keyframes appear{
-  from{
+@keyframes appear {
+  from {
     opacity: 0;
     scale: 0.5;
     transform: translateY(-100px);
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
     transform: translateY(0px);

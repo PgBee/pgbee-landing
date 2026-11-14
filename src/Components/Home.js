@@ -17,15 +17,15 @@ const Home = () => {
   // };
 
   return (
-    <div className='home-container'>
-      <div className='home-banner-container'>
+    <div className="home-container">
+      <div className="home-banner-container">
         <motion.div
-          className='home-bannerImage-container'
+          className="home-bannerImage-container"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: 'easeOut' }}
         >
-          <img src={BannerBackground} width='400' alt='Banner Background' />
+          <img src={BannerBackground} width="400" alt="Banner Background" />
         </motion.div>
 
         <motion.div
@@ -38,23 +38,19 @@ const Home = () => {
         </motion.div>
 
         <motion.div
-          className='home-text-section'
+          className="home-text-section"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
         >
-          <h1 className='primary-heading'>
-            Your Perfect Stay, Just a Click Away!
-          </h1>
-          <p className='primary-text'>
-            Find the best PGs, hostels and rooms nearby
-          </p>
+          <h1 className="primary-heading">Your Perfect Stay, Just a Click Away!</h1>
+          <p className="primary-text">Find the best PGs, hostels and rooms nearby</p>
 
-          <div className='align'>
-            <div className='button-group'>
-              <button 
-                className='secondary-button'
-                onClick={() => window.location.href = "https://app.pgbee.in"}
+          <div className="align">
+            <div className="button-group">
+              <button
+                className="secondary-button"
+                onClick={() => (window.location.href = 'https://app.pgbee.in')}
               >
                 Search Now
               </button>

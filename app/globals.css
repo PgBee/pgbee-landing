@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-yellow-50: #fffef0;
@@ -16,11 +16,10 @@
   --color-primary: #ffe536;
 }
 
-
 /* Global Reset & Base Styles */
 * {
   box-sizing: border-box;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -44,7 +43,7 @@ h2,
 h3,
 h4,
 .heading-font {
-  font-family: var(--font-unbounded), "Red Hat Display", sans-serif;
+  font-family: var(--font-unbounded), 'Red Hat Display', sans-serif;
   letter-spacing: -0.025em;
 }
 
@@ -61,7 +60,8 @@ img {
 
 /* Keyframe Animations */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -127,9 +127,15 @@ img {
 }
 
 @keyframes expandPulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-  100% { transform: scale(1.1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 /* Tailwind Component Layer - Custom Utilities */
@@ -221,12 +227,51 @@ img {
   inset: 0;
   z-index: -1;
   background-image:
-    linear-gradient(30deg, rgb(17 24 39 / 0.08) 12%, transparent 12.5%, transparent 87%, rgb(17 24 39 / 0.08) 87.5%, rgb(17 24 39 / 0.08)),
-    linear-gradient(150deg, rgb(17 24 39 / 0.08) 12%, transparent 12.5%, transparent 87%, rgb(17 24 39 / 0.08) 87.5%, rgb(17 24 39 / 0.08)),
-    linear-gradient(30deg, rgb(17 24 39 / 0.08) 12%, transparent 12.5%, transparent 87%, rgb(17 24 39 / 0.08) 87.5%, rgb(17 24 39 / 0.08)),
-    linear-gradient(150deg, rgb(17 24 39 / 0.08) 12%, transparent 12.5%, transparent 87%, rgb(17 24 39 / 0.08) 87.5%, rgb(17 24 39 / 0.08)),
-    linear-gradient(60deg, rgb(17 24 39 / 0.08) 25%, transparent 25.5%, transparent 75%, rgb(17 24 39 / 0.08) 75%);
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+    linear-gradient(
+      30deg,
+      rgb(17 24 39 / 0.08) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgb(17 24 39 / 0.08) 87.5%,
+      rgb(17 24 39 / 0.08)
+    ),
+    linear-gradient(
+      150deg,
+      rgb(17 24 39 / 0.08) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgb(17 24 39 / 0.08) 87.5%,
+      rgb(17 24 39 / 0.08)
+    ),
+    linear-gradient(
+      30deg,
+      rgb(17 24 39 / 0.08) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgb(17 24 39 / 0.08) 87.5%,
+      rgb(17 24 39 / 0.08)
+    ),
+    linear-gradient(
+      150deg,
+      rgb(17 24 39 / 0.08) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgb(17 24 39 / 0.08) 87.5%,
+      rgb(17 24 39 / 0.08)
+    ),
+    linear-gradient(
+      60deg,
+      rgb(17 24 39 / 0.08) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      rgb(17 24 39 / 0.08) 75%
+    );
+  background-position:
+    0 0,
+    0 0,
+    40px 70px,
+    40px 70px,
+    0 0;
   background-size: 80px 140px;
   content: '';
   mask-image: linear-gradient(to bottom, black, transparent 90%);
@@ -295,7 +340,8 @@ img {
     scale: 1;
   }
 
-  4%, 8% {
+  4%,
+  8% {
     filter: brightness(1.24) drop-shadow(0 0 16px rgb(255 229 54 / 0.95));
     scale: 1.17;
   }
@@ -305,7 +351,8 @@ img {
     scale: 1.13;
   }
 
-  20%, 100% {
+  20%,
+  100% {
     filter: brightness(1) drop-shadow(0 0 0 transparent);
     scale: 1;
   }
@@ -458,7 +505,9 @@ img {
   border-radius: 1rem;
   background: #fff;
   box-shadow: 0 1px 0 rgb(17 24 39 / 0.08);
-  transition: box-shadow 300ms ease, border-color 300ms ease;
+  transition:
+    box-shadow 300ms ease,
+    border-color 300ms ease;
 }
 
 .surface-card:hover {
@@ -489,13 +538,7 @@ img {
   display: flex;
   overflow: hidden;
   width: 100%;
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 8%,
-    black 92%,
-    transparent 100%
-  );
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -537,14 +580,16 @@ img {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: white;
   border: none;
   border-radius: 50px;
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
   z-index: 1000;
   cursor: pointer;
-  animation: fade-right 2s, float 3s ease-in-out infinite;
+  animation:
+    fade-right 2s,
+    float 3s ease-in-out infinite;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   min-width: 60px;
@@ -555,18 +600,18 @@ img {
 }
 
 .fixed-component:hover {
-  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
 }
 
 .fixed-component:focus {
-  outline: 2px solid #25D366;
+  outline: 2px solid #25d366;
   outline-offset: 2px;
 }
 
 .fixed-component:focus-visible {
-  outline: 2px solid #25D366;
+  outline: 2px solid #25d366;
   outline-offset: 2px;
 }
 
@@ -580,7 +625,7 @@ img {
   }
 
   .mobile-expanded {
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
     transform: scale(1.1) !important;
     width: 120px !important;
     border-radius: 25px !important;
@@ -607,8 +652,14 @@ img {
   }
 
   @keyframes expandPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.15); }
-    100% { transform: scale(1.1); }
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1.1);
+    }
   }
 }

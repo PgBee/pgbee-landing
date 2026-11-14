@@ -1,26 +1,26 @@
-'use client'
+'use client';
 
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 interface HamburgerIconProps {
-  isOpen: boolean
-  toggle: () => void
+  isOpen: boolean;
+  toggle: () => void;
 }
 
 const HamburgerIcon: React.FC<HamburgerIconProps> = ({ isOpen, toggle }) => {
   return (
-    <StyledButton 
+    <StyledButton
       onClick={toggle}
-      aria-label={isOpen ? "Close menu" : "Open menu"}
+      aria-label={isOpen ? 'Close menu' : 'Open menu'}
       $isOpen={isOpen}
     >
       <span></span>
       <span></span>
       <span></span>
     </StyledButton>
-  )
-}
+  );
+};
 
 const StyledButton = styled.button<{ $isOpen: boolean }>`
   display: flex;
@@ -34,11 +34,11 @@ const StyledButton = styled.button<{ $isOpen: boolean }>`
   padding: 0;
   z-index: 10;
   outline: none;
-  
+
   &:focus {
     outline: none;
   }
-  
+
   span {
     width: 100%;
     height: 2px;
@@ -47,23 +47,20 @@ const StyledButton = styled.button<{ $isOpen: boolean }>`
     transition: all 0.25s cubic-bezier(0.33, 1, 0.68, 1);
     position: relative;
     transform-origin: 1px;
-    
+
     &:first-child {
-      transform: ${({ $isOpen }) => 
-        $isOpen ? 'rotate(45deg) translateY(0px)' : 'rotate(0)'};
+      transform: ${({ $isOpen }) => ($isOpen ? 'rotate(45deg) translateY(0px)' : 'rotate(0)')};
     }
-    
+
     &:nth-child(2) {
       opacity: ${({ $isOpen }) => ($isOpen ? '0' : '1')};
-      transform: ${({ $isOpen }) => 
-        $isOpen ? 'translateX(20px)' : 'translateX(0)'};
+      transform: ${({ $isOpen }) => ($isOpen ? 'translateX(20px)' : 'translateX(0)')};
     }
-    
+
     &:nth-child(3) {
-      transform: ${({ $isOpen }) => 
-        $isOpen ? 'rotate(-45deg) translateY(0px)' : 'rotate(0)'};
+      transform: ${({ $isOpen }) => ($isOpen ? 'rotate(-45deg) translateY(0px)' : 'rotate(0)')};
     }
   }
-`
+`;
 
-export default HamburgerIcon
+export default HamburgerIcon;

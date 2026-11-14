@@ -1,36 +1,40 @@
-'use client'
+'use client';
 
-import About from '@/components/About'
-import Home from '@/components/Home'
-import Work from '@/components/Work'
-import Testimonials from '@/components/Testimonials'
-import PlayStore from '@/components/PlayStore'
-import Contacts from '@/components/Contacts'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
-import FAQ from '@/components/FAQ'
-import ConversionCTA from '@/components/ConversionCTA'
-import BeePath from '@/components/BeePath'
+import About from '@/components/About';
+import Home from '@/components/Home';
+import Work from '@/components/Work';
+import Testimonials from '@/components/Testimonials';
+import PlayStore from '@/components/PlayStore';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import FAQ from '@/components/FAQ';
+import ConversionCTA from '@/components/ConversionCTA';
+import BeePath from '@/components/BeePath';
 // import BeeSupport from '@/components/BeeSupport'
 
 const faqQuestions = [
   {
     question: 'What can I find on PgBee?',
-    answer: 'You can browse PGs, hostels and rooms, compare pricing and amenities, and review available room or bed details before choosing a stay.',
+    answer:
+      'You can browse PGs, hostels and rooms, compare pricing and amenities, and review available room or bed details before choosing a stay.',
   },
   {
     question: 'Are the properties verified?',
-    answer: 'PgBee works with property owners and publishes listing details provided through the platform. Always review the listing and contact support if something looks inaccurate.',
+    answer:
+      'PgBee works with property owners and publishes listing details provided through the platform. Always review the listing and contact support if something looks inaccurate.',
   },
   {
     question: 'Can I choose a room or bed?',
-    answer: 'When the property has room and bed inventory available, you can view the available options and select the one that suits you.',
+    answer:
+      'When the property has room and bed inventory available, you can view the available options and select the one that suits you.',
   },
   {
     question: 'How do I get help?',
-    answer: 'Email pgbee.company@gmail.com with your registered email address and a short description of your question. Our team will help you with the next steps.',
+    answer:
+      'Email pgbee.company@gmail.com with your registered email address and a short description of your question. Our team will help you with the next steps.',
   },
-]
+];
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -80,26 +84,38 @@ const structuredData = {
       })),
     },
   ],
-}
+};
 
 export default function Page() {
   return (
-    <div className=''>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <Navbar />
-        <div id='home'><Home /></div>
-        <div id='about'><About /></div>
-        <BeePath />
-        <div id='work'><Work /></div>
-        <div id='testimonials'><Testimonials /></div>
-        <ConversionCTA />
-        <div id='faq'><FAQ /></div>
-        <PlayStore />
-        <div id='contact'><Contacts /></div>
-        <Footer />
+    <div className="">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <Navbar />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <BeePath />
+      <div id="work">
+        <Work />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <ConversionCTA />
+      <div id="faq">
+        <FAQ />
+      </div>
+      <PlayStore />
+      <div id="contact">
+        <Contacts />
+      </div>
+      <Footer />
     </div>
-  )
-}   
+  );
+}

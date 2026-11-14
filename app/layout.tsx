@@ -1,20 +1,19 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Red_Hat_Display, Unbounded } from 'next/font/google'
+import './globals.css';
+import type { Metadata } from 'next';
+import { Red_Hat_Display, Unbounded } from 'next/font/google';
 
 const redHatDisplay = Red_Hat_Display({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   style: ['normal', 'italic'],
   display: 'swap',
-})
+});
 
 const unbounded = Unbounded({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   display: 'swap',
-  variable: '--font-unbounded',
-})
+});
 
 export const metadata: Metadata = {
   title: {
@@ -59,16 +58,12 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-}
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${redHatDisplay.className} ${unbounded.variable}`}>
+    <html lang="en" className={`${redHatDisplay.className} ${unbounded.className}`}>
       <body>{children}</body>
     </html>
-  )
+  );
 }
