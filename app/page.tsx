@@ -41,10 +41,10 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://www.pgbee.in/#organization',
+      '@id': 'https://pgbee.co.in/#organization',
       name: 'PgBee',
-      url: 'https://www.pgbee.in/',
-      logo: 'https://www.pgbee.in/PgBee.svg',
+      url: 'https://pgbee.co.in/',
+      logo: 'https://pgbee.co.in/PgBee.svg',
       email: 'pgbee.company@gmail.com',
       sameAs: [
         'https://www.instagram.com/pgbee.in',
@@ -54,17 +54,17 @@ const structuredData = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://www.pgbee.in/#website',
+      '@id': 'https://pgbee.co.in/',
       name: 'PgBee',
-      url: 'https://www.pgbee.in/',
-      publisher: { '@id': 'https://www.pgbee.in/#organization' },
+      url: 'https://pgbee.co.in/',
+      publisher: { '@id': 'https://pgbee.co.in/' },
     },
     {
       '@type': 'WebApplication',
-      '@id': 'https://app.pgbee.in/#webapplication',
+      '@id': 'https://app.pgbee.co.in/',
       name: 'PgBee Student Stay Search',
       description: 'Search and compare PGs, hostels and rooms near your college with PgBee.',
-      url: 'https://app.pgbee.in/search',
+      url: 'https://app.pgbee.co.in/search',
       applicationCategory: 'LifestyleApplication',
       operatingSystem: 'Web browser',
       browserRequirements: 'Requires a modern web browser with JavaScript enabled.',
@@ -73,7 +73,7 @@ const structuredData = {
         'Compare prices and amenities',
         'Review available rooms and beds',
       ],
-      provider: { '@id': 'https://www.pgbee.in/#organization' },
+      provider: { '@id': 'https://pgbee.co.in/#organization' },
     },
     {
       '@type': 'FAQPage',
@@ -108,9 +108,7 @@ export default function Page() {
         <Testimonials />
       </div>
       <ConversionCTA />
-      <div id="faq">
-        <FAQ />
-      </div>
+      <FAQ />
       <PlayStore />
       <div id="contact">
         <Contacts />

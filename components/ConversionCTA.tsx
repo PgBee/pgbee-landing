@@ -67,13 +67,13 @@ const ConversionCTA = () => {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <AnimatedButton
               text="Find a Stay"
-              href="https://app.pgbee.in/search"
+              href="https://app.pgbee.co.in/search"
               target="_blank"
               className="w-full rounded-full border border-white/30 bg-white px-7 py-3.5 font-bold text-gray-900 hover:bg-yellow-300 sm:w-auto"
             />
             <AnimatedButton
               text="List Your Property"
-              href="https://owners.pgbee.in"
+              href="https://owners.pgbee.co.in"
               target="_blank"
               className="w-full rounded-full border border-white/30 bg-transparent px-7 py-3.5 font-bold text-white hover:bg-white/10 sm:w-auto"
             />

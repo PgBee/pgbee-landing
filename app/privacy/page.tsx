@@ -3,10 +3,15 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+const title = 'Privacy Policy';
+const description = 'Privacy Policy for PgBee. Learn how we collect, use, and protect your data.';
+
 export const metadata: Metadata = {
-  title: 'Privacy Policy - PgBee',
-  description: 'Privacy Policy for PgBee. Learn how we collect, use, and protect your data.',
+  title,
+  description,
   alternates: { canonical: '/privacy' },
+  openGraph: { title, description, url: '/privacy' },
+  twitter: { title, description },
 };
 
 const PrivacyPolicy = () => {
@@ -23,7 +28,7 @@ const PrivacyPolicy = () => {
               <p>
                 This Privacy Policy describes how PgBee and its affiliates (collectively
                 &quot;PgBee, we, our, us&quot;) collect, use, share, protect or otherwise process
-                your information/ personal data through our website https://www.pgbee.in/
+                your information/ personal data through our website https://pgbee.co.in/
                 (hereinafter referred to as Platform). Please note that you may be able to browse
                 certain sections of the Platform without registering with us.We do not offer any
                 product/service under this Platform outside India and your personal data will

@@ -97,7 +97,7 @@ const Footer = () => {
                 FAQs
               </Link>
               <a
-                href="https://app.pgbee.in/search"
+                href="https://app.pgbee.co.in/search"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-gray-600 transition-all duration-200 hover:translate-x-1 hover:text-yellow-500"

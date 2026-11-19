@@ -45,7 +45,7 @@ const Navbar = () => {
         <a href="#About">About</a>
         <a href="#Work">Working</a>
         <a href="#Contact">Contact</a>
-        <a href="https://app.pgbee.in" target="_blank" rel="noopener noreferrer">
+        <a href="https://app.pgbee.co.in" target="_blank" rel="noopener noreferrer">
           <button className="primary-button">Search Now</button>
         </a>
       </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
             <ListItem disablePadding>
               <ListItemButton
                 component="a"
-                href="https://app.pgbee.in"
+                href="https://app.pgbee.co.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{ borderRadius: 2, background: '#ffe536', mt: 2 }}

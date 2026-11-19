@@ -2,10 +2,15 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+const title = 'Refund Policy';
+const description = 'Refund and cancellation information for PgBee bookings and services.';
+
 export const metadata: Metadata = {
-  title: 'Refund Policy | PgBee',
-  description: 'Refund and cancellation information for PgBee bookings and services.',
+  title,
+  description,
   alternates: { canonical: '/refund-policy' },
+  openGraph: { title, description, url: '/refund-policy' },
+  twitter: { title, description },
 };
 
 const sections = [

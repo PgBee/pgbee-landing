@@ -7,7 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/dashboard/', '/api/', '/cgi-bin/', '/tmp/', '/private/'],
     },
-    sitemap: 'https://www.pgbee.in/sitemap.xml',
-    host: 'https://www.pgbee.in',
+    sitemap: 'https://pgbee.co.in/sitemap.xml',
   };
 }

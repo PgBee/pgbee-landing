@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     template: '%s | PgBee',
   },
   description: 'Compare verified PGs, hostels and rooms near your college with PgBee.',
-  metadataBase: new URL('https://www.pgbee.in'),
+  metadataBase: new URL('https://pgbee.co.in'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'PgBee | Find your perfect student stay',
     description: 'Compare verified PGs, hostels and rooms near your college with PgBee.',
-    url: 'https://www.pgbee.in',
+    url: 'https://pgbee.co.in',
     siteName: 'PgBee',
     type: 'website',
     locale: 'en_IN',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${redHatDisplay.className} ${unbounded.className}`}>
+    <html lang="en-IN" className={`${redHatDisplay.className} ${unbounded.className}`}>
       <body>{children}</body>
     </html>
   );

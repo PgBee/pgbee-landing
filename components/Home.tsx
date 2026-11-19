@@ -12,10 +12,10 @@ const Home = () => {
       id="Home"
     >
       <div className="mx-auto w-full max-w-[1500px] px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
-        <div className="mb-10 flex items-center justify-between gap-4 text-[10px] font-bold tracking-[0.24em] text-gray-900/60 uppercase sm:text-xs">
+        {/* <div className="mb-10 flex items-center justify-between gap-4 text-[10px] font-bold tracking-[0.24em] text-gray-900/60 uppercase sm:text-xs">
           <span>Student living / 2026</span>
           <span className="hidden sm:block">Find. Compare. Move in.</span>
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           {/* Content */}
           <motion.div
@@ -40,7 +40,7 @@ const Home = () => {
             <div className="flex max-w-2xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 lg:flex-nowrap">
               <AnimatedButton
                 text="Find a Stay"
-                href="https://app.pgbee.in/search"
+                href="https://app.pgbee.co.in/search"
                 className="w-full cursor-pointer rounded-full bg-white px-7 py-3.5 text-base font-bold text-black shadow-none hover:bg-gray-100 sm:w-auto sm:min-w-[170px] sm:px-8 sm:py-4 sm:text-lg"
                 icon={
                   <svg
@@ -61,7 +61,7 @@ const Home = () => {
               />
               <AnimatedButton
                 text="List Your Property"
-                href="https://owners.pgbee.in"
+                href="https://owners.pgbee.co.in"
                 target="_blank"
                 className="w-full cursor-pointer rounded-full border border-gray-900/35 bg-transparent px-7 py-3.5 text-base font-bold text-gray-900 transition-opacity hover:bg-gray-900 hover:text-white sm:w-auto sm:min-w-[190px] sm:px-8 sm:py-4 sm:text-lg"
               />

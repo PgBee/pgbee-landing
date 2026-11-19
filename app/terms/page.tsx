@@ -2,10 +2,15 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+const title = 'Terms & Conditions';
+const description = 'Terms and conditions for using PgBee services.';
+
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | PgBee',
-  description: 'Terms and conditions for using PgBee services.',
+  title,
+  description,
   alternates: { canonical: '/terms' },
+  openGraph: { title, description, url: '/terms' },
+  twitter: { title, description },
 };
 
 const sections = [

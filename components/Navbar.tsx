@@ -70,14 +70,14 @@ const Navbar = () => {
             className="h-8 w-8 sm:h-10 sm:w-10"
             priority
           />
-          <Image
+          {/* <Image
             src={isScrolled ? '/logo.png' : '/logo-dark.png'}
             alt="PgBee Logo"
             width={100}
             height={25}
-            className="h-auto w-15 sm:w-28"
+            className="h-auto w-10 sm:w-28"
             priority
-          />
+          /> */}
         </Link>
         <div
           className="relative hidden items-center gap-2 lg:flex xl:gap-4"
@@ -122,7 +122,7 @@ const Navbar = () => {
           ))}
           <AnimatedButton
             text="Find a Stay"
-            href="https://app.pgbee.in/search"
+            href="https://app.pgbee.co.in/search"
             target="_blank"
             className={`px-6 py-2.5 xl:px-8 xl:py-3 ${
               isScrolled ? 'bg-yellow-400 hover:bg-yellow-500' : 'bg-white hover:bg-gray-100'
@@ -177,7 +177,7 @@ const Navbar = () => {
             <ListItem disablePadding sx={{ mt: 3, display: 'block' }}>
               <AnimatedButton
                 text="Find a Stay"
-                href="https://app.pgbee.in/search"
+                href="https://app.pgbee.co.in/search"
                 target="_blank"
                 className="w-full rounded-xl bg-white py-4 text-lg font-bold text-black shadow-none transition-colors duration-300 hover:bg-gray-100"
               />
@@ -185,7 +185,7 @@ const Navbar = () => {
             <ListItem disablePadding sx={{ mt: 2, display: 'block' }}>
               <AnimatedButton
                 text="List Your Property"
-                href="https://owners.pgbee.in"
+                href="https://owners.pgbee.co.in"
                 target="_blank"
                 className="w-full rounded-xl bg-gray-900 py-4 text-lg font-bold text-white shadow-md transition-all duration-300 hover:bg-gray-800"
               />

@@ -50,7 +50,7 @@ const Home = () => {
             <div className="button-group">
               <button
                 className="secondary-button"
-                onClick={() => (window.location.href = 'https://app.pgbee.in')}
+                onClick={() => (window.location.href = 'https://app.pgbee.co.in')}
               >
                 Search Now
               </button>

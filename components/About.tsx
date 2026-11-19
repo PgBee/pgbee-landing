@@ -109,7 +109,7 @@ const About = () => {
           </div>
           <AnimatedButton
             text="List Your Property"
-            href="https://owners.pgbee.in"
+            href="https://owners.pgbee.co.in"
             target="_blank"
             className="w-full shrink-0 rounded-full bg-yellow-400 px-6 py-3 font-bold text-gray-900 shadow-md hover:bg-yellow-300 sm:w-auto"
           />
