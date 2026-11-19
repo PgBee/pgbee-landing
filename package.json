@@ -70,13 +70,5 @@
     "*.{json,md,css,html,yaml,yml}": [
       "prettier --write"
     ]
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "sharp",
-      "core-js",
-      "core-js-pure",
-      "unrs-resolver"
-    ]
   }
 }
