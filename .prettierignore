@@ -8,6 +8,11 @@ node_modules/
 out/
 build/
 dist/
+.open-next/
+.wrangler/
+
+# Lockfile (managed by pnpm)
+pnpm-lock.yaml
 
 # Environment files
 .env

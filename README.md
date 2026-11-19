@@ -33,8 +33,26 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment (Cloudflare Workers)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The production site is a Cloudflare Worker built with `opennextjs-cloudflare`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```bash
+pnpm build      # next build + opennextjs-cloudflare → .open-next/
+pnpm cf:build   # OpenNext build only (expects .next to already exist)
+pnpm preview    # Build + local Workers preview
+```
+
+The deployable artifact is `.open-next/worker.js` plus `.open-next/assets` — not `.next`.
+
+| Setting           | Value                 |
+| ----------------- | --------------------- |
+| Production branch | `main`                |
+| Build command     | `pnpm build`          |
+| Deploy command    | `npx wrangler deploy` |
+| `NODE_VERSION`    | `24`                  |
+
+- `wrangler.jsonc` defines the worker (`pgbee-landing`), static assets and the self-reference binding.
+- `open-next.config.ts` is required by the adapter and must stay committed.
+- Use `npx wrangler deploy` (or `pnpm exec wrangler deploy`). **Do not** use `pnpm deploy`: pnpm reserves that command and fails with `ERR_PNPM_NOTHING_TO_DEPLOY`.
+- The canonical host is `https://pgbee.co.in` — point that host (and `www`) at the deployed Worker so the canonical/sitemap/OG URLs resolve.

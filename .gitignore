@@ -8,6 +8,8 @@ node_modules/
 out/
 build/
 dist/
+.open-next/
+.wrangler/
 
 # Environment files
 .env

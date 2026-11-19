@@ -110,12 +110,17 @@ secondary: '#6a6a6a',    /* Dark gray */
 ## Deployment
 
 ```bash
-pnpm build
-# Output: .next/ (Next.js Pages Router build)
+pnpm build      # next build + opennextjs-cloudflare → .open-next/
+pnpm cf:build   # OpenNext build only
+pnpm preview    # Build + local Workers preview
 ```
 
-- **Vercel:** Connect repo, auto-deploys
-- **Static Export:** Not configured (uses `next start`)
+The deployable artifact is `.open-next/worker.js` plus `.open-next/assets` — not `.next`.
+
+- **Cloudflare Workers:** branch `main`, build `pnpm build`, deploy `npx wrangler deploy`, `NODE_VERSION=24`.
+- `wrangler.jsonc` (`pgbee-landing`) and `open-next.config.ts` are required and must stay committed.
+- Use `npx wrangler deploy` — **not** `pnpm deploy`, which pnpm reserves (`ERR_PNPM_NOTHING_TO_DEPLOY`).
+- Canonical host is `https://pgbee.co.in`; route it (and `www`) to the deployed Worker.
 
 ## Testing
 
