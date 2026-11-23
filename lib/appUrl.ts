@@ -7,4 +7,4 @@
  * resolving - every call to action on the landing page became a dead link.
  * One constant means the next domain move is a one-line change.
  */
-export const APP_URL = "https://app.pgbee.co.in/";
+export const APP_URL = 'https://app.pgbee.co.in/';

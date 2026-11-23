@@ -16,19 +16,19 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
-        <div className="Home">
-          <Home/>
-        </div>
-        <div className='About'>
-          <About/>
-        </div>
-        <div className='Work'>
-            <Work/>
-        </div>
-        <Contacts/>
-        <Footer/>
-        <BeeSupport/>
+      <Navbar />
+      <div className="Home">
+        <Home />
+      </div>
+      <div className="About">
+        <About />
+      </div>
+      <div className="Work">
+        <Work />
+      </div>
+      <Contacts />
+      <Footer />
+      <BeeSupport />
     </div>
   );
 }

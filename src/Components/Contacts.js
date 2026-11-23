@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Contact = () => {
   const email = 'pgbee.company@gmail.com';
@@ -9,7 +9,9 @@ const Contact = () => {
       <h1 className="primary-heading">Let Us Help You</h1>
       <div className="contact-form-container">
         <input type="text" placeholder="yourmail@gmail.com" />
-        <a href={`mailto:${email}`} className="secondary-button">Submit</a>
+        <a href={`mailto:${email}`} className="secondary-button">
+          Submit
+        </a>
       </div>
     </div>
   );

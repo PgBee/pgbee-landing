@@ -1,0 +1,9 @@
+packages:
+  - .
+allowBuilds:
+  esbuild: true
+  workerd: true
+  core-js: true
+  core-js-pure: true
+  sharp: true
+  unrs-resolver: true

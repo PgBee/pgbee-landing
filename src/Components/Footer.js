@@ -1,10 +1,9 @@
-import React from "react";
-import Logo from "../Assets/PgBee.svg";
-import { BsTwitter } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-
+import React from 'react';
+import Logo from '../Assets/PgBee.svg';
+import { BsTwitter } from 'react-icons/bs';
+import { SiLinkedin } from 'react-icons/si';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -30,10 +29,15 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <a href="#About"><span>About</span></a>
-          <a href="#Work"><span>Working</span></a>
-          <a href="#Contact"><span>Contact</span></a>
-          
+          <a href="#About">
+            <span>About</span>
+          </a>
+          <a href="#Work">
+            <span>Working</span>
+          </a>
+          <a href="#Contact">
+            <span>Contact</span>
+          </a>
         </div>
         <div className="footer-section-columns">
           {/* <span>244-5333-7783</span>

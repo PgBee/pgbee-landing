@@ -1,0 +1,43 @@
+# <type>(<scope>): <subject>
+#
+# Types:
+#   feat     - A new feature
+#   fix      - A bug fix
+#   docs     - Documentation only changes
+#   style    - Changes that do not affect the meaning of the code (white-space, formatting, etc)
+#   refactor - A code change that neither fixes a bug nor adds a feature
+#   perf     - A code change that improves performance
+#   test     - Adding missing tests or correcting existing tests
+#   build    - Changes that affect the build system or external dependencies
+#   ci       - Changes to CI configuration files and scripts
+#   chore    - Other changes that don't modify src or test files
+#   revert   - Reverts a previous commit
+#
+# Scopes (examples):
+#   home, about, work, contacts, footer, navbar, bee-support, hamburger
+#   animations, styling, types, config, deps, ci, scripts
+#
+# Subject:
+#   - Use imperative, present tense: "change" not "changed" nor "changes"
+#   - Don't capitalize first letter
+#   - No dot (.) at the end
+#
+# Body:
+#   - Explain what and why vs. how
+#   - Wrap at 72 characters
+#
+# Footer:
+#   - Reference issues: "Fixes #123" or "Closes #123"
+#   - Breaking changes: "BREAKING CHANGE: <description>"
+#
+# Examples:
+#   feat(home): add hero banner animation
+#   fix(navbar): resolve mobile hamburger menu toggle
+#   docs(readme): update deployment instructions
+#   refactor(components): extract shared button component
+#   style(footer): format with prettier
+#   test(home): add snapshot test for hero section
+#   build(deps): update tailwindcss to v4.1.17
+#   ci(github): add playwright test workflow
+#
+# ---------------------------------------------------------

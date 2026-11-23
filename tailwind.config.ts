@@ -1,33 +1,30 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        primary: '#fff200',
+        primary: '#ffe536',
         secondary: '#6a6a6a',
       },
       spacing: {
         'safe-padding': '1rem',
       },
       screens: {
-        'xs': '320px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
+        xs: '320px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
         '2xl': '1536px',
       },
       animation: {
         'fade-up': 'fadeUp 0.5s ease-out',
         'fade-down': 'fadeDown 0.5s ease-out',
         'fade-right': 'fadeRight 0.5s ease-out',
-        'appear': 'appear 0.5s ease-out',
-        'float': 'float 3s ease-in-out infinite',
+        appear: 'appear 0.5s ease-out',
+        float: 'float 3s ease-in-out infinite',
         'pulse-ring': 'pulseRing 2s infinite',
       },
       keyframes: {
@@ -62,12 +59,12 @@ const config: Config = {
           },
         },
         appear: {
-          'from': {
+          from: {
             opacity: '0',
             scale: '0.5',
             transform: 'translateY(-100px)',
           },
-          'to': {
+          to: {
             opacity: '1',
             scale: '1',
             transform: 'translateY(0px)',
@@ -95,6 +92,6 @@ const config: Config = {
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;

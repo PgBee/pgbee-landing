@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
   return (
@@ -15,14 +15,16 @@ const About = () => {
           Access to exclusive Hostels, PGs and rent without fear of misinformation
         </h1>
         <p className="primary-text">
-          we aim to simplify the process of finding student accommodations. Our platform connects students with verified hostels and PGs, providing a seamless experience to search, compare, and book the perfect place to stay.
+          we aim to simplify the process of finding student accommodations. Our platform connects
+          students with verified hostels and PGs, providing a seamless experience to search,
+          compare, and book the perfect place to stay.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
