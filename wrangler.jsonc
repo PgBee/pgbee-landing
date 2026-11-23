@@ -8,5 +8,11 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS",
   },
-  "services": [{ "binding": "WORKER_SELF_REFERENCE", "service": "pgbee-landing" }],
+  "node_modules": "node_modules",
+  "vars": {},
+  "bindings": [
+    { "name": "WORKER_SELF_REFERENCE", "service": "pgbee-landing" }
+  ],
+  "durable_objects": {},
+  "shared": "auto"
 }
