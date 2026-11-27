@@ -29,7 +29,6 @@ const Work = () => {
     <section className="w-full border-y border-gray-200/70 bg-white/45 py-16 sm:py-20 lg:py-28">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center sm:mb-16">
-          <span className="section-eyebrow mb-3 sm:mb-4">How It Works</span>
           <h2 className="section-title mb-4 sm:mb-6">Simple Steps to Your Perfect Stay</h2>
           <p className="section-description mx-auto max-w-3xl">
             Browse verified listings, compare rooms and prices, then contact or book your preferred

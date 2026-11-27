@@ -267,7 +267,6 @@ const Testimonials = () => {
     <section className="w-full overflow-hidden py-16 sm:py-20 lg:py-28">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center sm:mb-16">
-          <span className="section-eyebrow mb-3 sm:mb-4">Testimonials</span>
           <h2 className="section-title mb-4 px-4 sm:mb-6">
             What early users say
             <br className="hidden sm:block" />

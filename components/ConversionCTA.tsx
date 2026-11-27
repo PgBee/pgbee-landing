@@ -55,9 +55,6 @@ const ConversionCTA = () => {
           <span className="ticket-corner-hole ticket-corner-hole-tr" aria-hidden="true" />
           <span className="ticket-corner-hole ticket-corner-hole-bl" aria-hidden="true" />
           <span className="ticket-corner-hole ticket-corner-hole-br" aria-hidden="true" />
-          <p className="mb-4 text-xs font-bold tracking-[0.2em] text-yellow-400 uppercase">
-            Your next move
-          </p>
           <h2 className="max-w-3xl text-3xl leading-tight font-bold text-white sm:text-4xl lg:text-5xl">
             Make the search for your stay simpler.
           </h2>
@@ -90,10 +87,7 @@ const ConversionCTA = () => {
           <span className="ticket-corner-hole ticket-corner-hole-tr" aria-hidden="true" />
           <span className="ticket-corner-hole ticket-corner-hole-bl" aria-hidden="true" />
           <span className="ticket-corner-hole ticket-corner-hole-br" aria-hidden="true" />
-          <p className="text-xs font-bold tracking-[0.2em] text-gray-900/60 uppercase">
-            Need help?
-          </p>
-          <h3 className="mt-4 text-2xl leading-tight font-bold text-gray-900">
+          <h3 className="text-2xl leading-tight font-bold text-gray-900">
             Talk to the PgBee team.
           </h3>
           <p className="mt-3 text-sm leading-relaxed text-gray-900/65">

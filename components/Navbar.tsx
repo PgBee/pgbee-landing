@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <motion.nav
       className={`sticky top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 py-2 shadow-sm backdrop-blur-md' : 'bg-yellow-400 py-4'
+        isScrolled ? 'bg-white/95 py-2 shadow-sm backdrop-blur-md' : 'bg-white/0 py-4'
       }`}
       initial={{ y: -20, opacity: 1 }}
       animate={{ y: 0, opacity: 1 }}
@@ -62,8 +62,9 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 cursor-pointer items-center gap-4">
+          {/* app/icon.png is a Next metadata route, so the image optimizer cannot read /icon.png. */}
           <Image
-            src="/icon.png"
+            src="/pgbee-icon.png"
             alt="PgBee Icon"
             width={32}
             height={32}

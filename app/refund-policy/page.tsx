@@ -47,7 +47,6 @@ export default function RefundPolicyPage() {
       <main className="py-12 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm sm:p-10 lg:p-14">
-            <p className="section-eyebrow mb-4">Legal</p>
             <h1 className="section-title mb-4">Refund Policy</h1>
             <p className="mb-10 text-sm text-gray-500">Last updated: July 2026</p>
             <div className="space-y-8 text-sm leading-7 text-gray-600 sm:text-base">

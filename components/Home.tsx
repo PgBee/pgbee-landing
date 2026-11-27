@@ -8,14 +8,10 @@ import AnimatedButton from './AnimatedButton';
 const Home = () => {
   return (
     <section
-      className="hero-shell flex w-full items-center justify-center overflow-hidden"
+      className="hero-shell relative z-0 -mt-20 flex w-full items-center justify-center overflow-hidden"
       id="Home"
     >
-      <div className="mx-auto w-full max-w-[1500px] px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
-        {/* <div className="mb-10 flex items-center justify-between gap-4 text-[10px] font-bold tracking-[0.24em] text-gray-900/60 uppercase sm:text-xs">
-          <span>Student living / 2026</span>
-          <span className="hidden sm:block">Find. Compare. Move in.</span>
-        </div> */}
+      <div className="mx-auto w-full max-w-[1500px] px-4 pt-24 pb-12 sm:px-8 sm:pb-16 lg:px-12 lg:pb-20">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           {/* Content */}
           <motion.div
@@ -65,14 +61,6 @@ const Home = () => {
                 target="_blank"
                 className="w-full cursor-pointer rounded-full border border-gray-900/35 bg-transparent px-7 py-3.5 text-base font-bold text-gray-900 transition-opacity hover:bg-gray-900 hover:text-white sm:w-auto sm:min-w-[190px] sm:px-8 sm:py-4 sm:text-lg"
               />
-            </div>
-
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] font-bold tracking-[0.18em] text-gray-900/55 uppercase sm:text-xs">
-              <span>PGs</span>
-              <span className="h-1 w-1 rounded-full bg-gray-900/40" aria-hidden="true" />
-              <span>Hostels</span>
-              <span className="h-1 w-1 rounded-full bg-gray-900/40" aria-hidden="true" />
-              <span>Rooms</span>
             </div>
 
             <div className="editorial-rule max-w-xl" />
