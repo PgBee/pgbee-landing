@@ -200,24 +200,12 @@ img {
 }
 
 /* Shared landing-page visual language */
-.section-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 9999px;
-  border: 1px solid rgb(17 24 39 / 0.14);
-  background: rgb(255 255 255 / 0.55);
-  color: #4d4100;
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 700;
-}
-
 .hero-shell {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: min(760px, calc(100vh - 4rem));
+  min-height: 100vh;
+  min-height: 100svh;
   border-radius: 0 0 2.5rem 2.5rem;
   background: #ffe536;
 }
@@ -274,6 +262,7 @@ img {
     0 0;
   background-size: 80px 140px;
   content: '';
+  opacity: 0.2;
   mask-image: linear-gradient(to bottom, black, transparent 90%);
 }
 
@@ -298,7 +287,7 @@ img {
 
 .editorial-rule {
   height: 1px;
-  background: rgb(17 24 39 / 0.2);
+  background: rgba(145, 151, 164, 0.2);
 }
 
 .ticket-cta {

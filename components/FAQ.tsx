@@ -29,7 +29,6 @@ const FAQ = () => (
   <section id="faq" className="w-full py-16 sm:py-20 lg:py-28">
     <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
       <div className="mb-10 text-center sm:mb-14">
-        <span className="section-eyebrow mb-3 sm:mb-4">FAQs</span>
         <h2 className="section-title mb-4">Questions before you search?</h2>
         <p className="section-description">Here are a few things students commonly want to know.</p>
       </div>

@@ -18,7 +18,6 @@ const Contact = () => {
     <section className="relative z-10 w-full bg-[#fafafa] py-16 sm:py-20 lg:py-28">
       <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center sm:mb-12">
-          <span className="section-eyebrow mb-3 sm:mb-4">Get In Touch</span>
           <h2 className="section-title mb-3 sm:mb-4">Have Questions In Mind?</h2>
           <p className="text-base text-gray-600 sm:text-lg">
             Let us help you find your perfect stay

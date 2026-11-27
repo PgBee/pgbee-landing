@@ -8,7 +8,6 @@ const About = () => {
     <section className="w-full py-16 sm:py-20 lg:py-28">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center sm:mb-16">
-          <span className="section-eyebrow mb-3 sm:mb-4">About PgBee</span>
           <h2 className="section-title mb-4 px-4 sm:mb-6">
             Access to Verified Hostels & PGs
             <br className="hidden sm:block" />
@@ -97,9 +96,6 @@ const About = () => {
 
         <div className="mt-10 flex flex-col gap-5 rounded-2xl bg-gray-900 p-6 sm:mt-14 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
-            <p className="mb-2 text-xs font-bold tracking-[0.18em] text-yellow-400 uppercase">
-              For property owners
-            </p>
             <h3 className="text-xl font-bold text-white sm:text-2xl">
               Bring your rooms to the right students.
             </h3>
